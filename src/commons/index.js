@@ -48,6 +48,7 @@ export function getLoginUser() {
  */
 export function isLogin() {
     // 如果当前用户存在，就认为已经登录了
+    // !!a 表示a的值不是 null|undefined|''|0
     return !!getLoginUser();
 }
 
