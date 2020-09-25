@@ -35,6 +35,7 @@ export default class extends Component {
             setFieldsValue({userName: 'admin', password: '111'});
         }
 
+        // setState方法用于修改state中的数据，同时请求刷新界面
         setTimeout(() => this.setState({isMount: true}), 200);
     }
 
