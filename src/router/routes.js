@@ -16,6 +16,7 @@ export const commonPaths = [
     '/',
     '/login',
 ];
+// export default导出时未指定具体的名称，则使用方可以指定任意名称来使用
 /*
 * 非脚本抓取的路由，可以在这里编辑，脚本抓取的路由在./src/pages/page-routes.js中
 * */
