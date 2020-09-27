@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {BackTop, Spin} from 'antd';
 import {Helmet} from 'react-helmet';
-import {withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom'; // withRouter作用让路由参数传入组件中
 import PageHead from '../page-head';
 import Header from '../header';
 import Side from '../side';
