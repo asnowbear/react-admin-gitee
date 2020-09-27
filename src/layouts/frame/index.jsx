@@ -1,3 +1,5 @@
+// 页面入口在AppRouter中
+
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {BackTop, Spin} from 'antd';
