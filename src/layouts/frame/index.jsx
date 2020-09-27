@@ -27,7 +27,6 @@ import './style.less';
         showPageHead: showHead,
         title,
         breadcrumbs,
-
         showSide,
         sideWidth: width,
         sideCollapsed: collapsed,
@@ -49,6 +48,7 @@ export default class FrameTopSideMenu extends Component {
         this.props.action.getStateFromStorage();
 
         const loginUser = getLoginUser();
+        // 链判断运算符?.
         const userId = loginUser?.id;
 
         // 获取系统菜单 和 随菜单携带过来的权限
