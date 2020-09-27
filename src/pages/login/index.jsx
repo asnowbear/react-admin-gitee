@@ -25,6 +25,7 @@ export default class extends Component {
         isMount: false,
     };
 
+    // 在组件第一次渲染DOM时触发，只触发一次
     componentDidMount() {
         const {form: {validateFields, setFieldsValue}} = this.props;
         // 一开始禁用提交按钮

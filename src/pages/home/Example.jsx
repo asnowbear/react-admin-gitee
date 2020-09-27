@@ -217,7 +217,6 @@ export default class Home extends Component {
                         <div style={colStyle}>
                             <Map/>
                         </div>
-
                     </Col>
                     <Col span={12}>
                         <div style={colStyle}>
