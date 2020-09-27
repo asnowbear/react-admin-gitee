@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom' // 切换路由的Switch
 import {isLogin} from '@/commons';
 import PageFrame from '@/layouts/frame';
 import Error404 from '@/pages/error/Error404';
