@@ -1,5 +1,5 @@
 import pageRoutes, {noAuths, noFrames, keepAlives} from '../pages/page-routes';
-import ReactLoadable from "react-loadable";
+import ReactLoadable from "react-loadable"; // 按照路由或组件来切割代码
 import PageLoading from "@/layouts/page-loading";
 
 // 不需要页面框架的页面配置

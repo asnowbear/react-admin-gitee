@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom'; // 路由
 import PubSub from 'pubsub-js'
 import {compose} from '@/library/utils'
 import queryHoc from '@/library/utils/query-hoc';

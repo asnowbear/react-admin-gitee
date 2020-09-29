@@ -15,6 +15,12 @@ export function compose(functions) {
         return functions[0]
     }
 
+    // functions = [
+      // func1,
+      // func2,
+      // func3,
+    // ]
+
     return functions.reduce((a, b) => (...args) => a(b(...args)))
 }
 
