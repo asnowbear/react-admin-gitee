@@ -1,6 +1,7 @@
 import {isFSA} from 'flux-standard-action';
 import _ from 'lodash';
 
+// 判断一个类型是否为Promise类型
 function isPromise(val) {
     return val && typeof val.then === 'function';
 }

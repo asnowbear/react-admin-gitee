@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+// BrowserRouter控制路由跳转
+// Switch是路由切换
+import { BrowserRouter, Route, Switch } from 'react-router-dom' // 切换路由的Switch
 import {isLogin} from '@/commons';
-import PageFrame from '@/layouts/frame';
+import PageFrame from '@/layouts/frame'; // 主页面入口
 import Error404 from '@/pages/error/Error404';
 import config from '@/commons/config-hoc';
 import KeepAuthRoute from './KeepAuthRoute';
+// 组件的tab标签导航
 import KeepPage from './KeepPage';
+// routes，混合导出方式
+// export default：一个文件只能有一个export default命令，不指定名称，则使用方可指定任意名称
+// export 一个文件可以有多个，使用方使用时必须加{}
 import routes, {noFrameRoutes, noAuthRoutes, /*commonPaths*/} from './routes';
 
 // 如果项目挂载到网站的子目录下，可以配置ROUTE_BASE_NAME， 开发时拿不到 PUBLIC_URL

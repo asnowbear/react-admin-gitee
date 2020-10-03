@@ -25,6 +25,7 @@ export default class extends Component {
         isMount: false,
     };
 
+    // 在组件第一次渲染DOM时触发，只触发一次
     componentDidMount() {
         const {form: {validateFields, setFieldsValue}} = this.props;
         // 一开始禁用提交按钮
@@ -35,6 +36,7 @@ export default class extends Component {
             setFieldsValue({userName: 'admin', password: '111'});
         }
 
+        // setState方法用于修改state中的数据，同时请求刷新界面
         setTimeout(() => this.setState({isMount: true}), 200);
     }
 

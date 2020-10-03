@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom'; // 路由
 import PubSub from 'pubsub-js'
 import {compose} from '@/library/utils'
 import queryHoc from '@/library/utils/query-hoc';
@@ -11,6 +11,7 @@ import {modal as modalHoc} from '@/library/components';
 import {ROUTE_BASE_NAME} from '@/router/AppRouter';
 
 /**
+ * 利用属性代理的方式
  * 页面配置高阶组件，整合了多个高阶组件
  * @param options
  * @returns {function(*): WithConfig}

@@ -8,6 +8,7 @@ import 'moment/locale/zh-cn'; // 解决 antd 日期组件国际化问题
 // 设置语言
 moment.locale('zh-cn');
 
+// connect是一个高阶组件
 @connect()
 export default class App extends React.Component {
     render() {
