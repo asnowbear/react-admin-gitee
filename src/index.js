@@ -27,8 +27,10 @@ storage.init({
 sxRedux.init({storage, handleError, handleSuccess});
 
 // models store
+// 创建store，state只是store的瞬时数据状态
 const store = configureStore();
 
+// Proveder跨组件共享数据
 ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls(问题，陷阱).
