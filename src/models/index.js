@@ -1,3 +1,5 @@
+
+// combineReducers用于合并Reducers，讲大应用中的Reducers合并成一个
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunkMiddleware from 'redux-thunk'; // 使得thunk在应用中实现异步性
 import {

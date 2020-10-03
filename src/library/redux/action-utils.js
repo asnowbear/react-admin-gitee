@@ -1,3 +1,6 @@
+// createAction用于创建action的工厂，对应的还有handleAction方法
+// Action大致类似event，用于传递消息并携带数据的
+// Reducer类似action的实际处理对象，并实际更新state数据
 import {createAction} from 'redux-actions';
 import * as types from './action-types';
 import {getStorage} from './index';
