@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'; // 表单验证组件
 import {BackTop, Spin} from 'antd';
 import {Helmet} from 'react-helmet';
 import {withRouter} from 'react-router-dom';
