@@ -21,7 +21,8 @@ const middleware = [
 ];
 
 export function configureStore(initialState) {
-    return applyMiddleware(...middleware)(createStore)(combineReducers(reducers), initialState);
+    return applyMiddleware(...middleware)
+        (createStore)(combineReducers(reducers), initialState);
 }
 
 // 与redux进行连接 函数

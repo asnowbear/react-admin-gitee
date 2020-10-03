@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types'; // 表单验证组件
 import {BackTop, Spin} from 'antd';
 import {Helmet} from 'react-helmet';
+// 把不是通过路由切换过来的组件中，将react-router 的 history、location、match 
+// 三个对象传入props对象上，主要是想使用路由参数。
+// 一般首页组件不是通过路由，是从地址输入的
 import {withRouter} from 'react-router-dom';
 import PageHead from '../page-head';
 import Header from '../header';
@@ -89,6 +92,7 @@ export default class FrameTopSideMenu extends Component {
             this.setTitleAndBreadcrumbs();
         });
 
+        // 监听路由切换事件
         this.props.history.listen(() => {
             // 加上timeout之后，tab页切换之后，对应页面就不render了，不知道为什么！
             setTimeout(() => {
