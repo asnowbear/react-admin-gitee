@@ -1,5 +1,6 @@
 
 // combineReducers用于合并Reducers，讲大应用中的Reducers合并成一个
+// applyMiddleware的作用是讲所用的中间件合并成一个数组，并依次执行
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunkMiddleware from 'redux-thunk'; // 使得thunk在应用中实现异步性
 import {
