@@ -11,6 +11,7 @@ moment.locale('zh-cn');
 // connect是一个高阶组件
 // connect主要作用是将UI组件和State关联起来，形成容器组件
 // 并能使用State中的数据
+// 主要是使用store中的数据
 @connect()
 export default class App extends React.Component {
     render() {
